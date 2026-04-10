@@ -1,32 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MBO Inc. | Mboulaye Business Organizations</title>
     
-    <link rel="icon" type="image/png" href="MBO logo white.jpeg">
-    
+    <title>MBO Inc. | Mboulaye Business Organizations - Tech & Logistics</title>
+    <meta name="title" content="MBO Inc. | Mboulaye Business Organizations - Tech & Logistics">
+    <meta name="description" content="Mboulaye Business Organizations (MBO Inc.) provides cutting-edge digital solutions, academic research on AI and digitalization, and resource logistics. Based in Buea, Cameroon.">
+    <meta name="keywords" content="MBO Inc, Mboulaye Business Organizations, Software Development Cameroon, EdTech Cameroon, iwedu, AI Research, Business Logistics Buea, Digital Transformation">
+    <meta name="author" content="Mboulaye Romien">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.mymbo.org/">
+    <meta property="og:title" content="MBO Inc. | Architecting the Future of Integrated Business">
+    <meta property="og:description" content="Bespoke software, academic research, and strategic logistics. Home of the iwedu school management ecosystem.">
+    <meta property="og:image" content="assets/MBO logo white.jpeg">
+
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="MBO Inc. | Mboulaye Business Organizations">
+    <meta property="twitter:description" content="Innovative digital systems and strategic management frameworks for global growth.">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Mboulaye Business Organizations",
+      "alternateName": "MBO Inc.",
+      "url": "https://www.mymbo.org",
+      "logo": "https://www.mymbo.org/assets/MBO%20logo%20white.jpeg",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "email": "info@mymbo.org",
+        "contactType": "customer service"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Buea",
+        "addressCountry": "CM"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/company/mbo-inc"
+      ]
+    }
+    </script>
+
+    <link rel="icon" type="image/png" href="assets/MBO logo white.jpeg">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
     <style>
         .accent-red { color: #EF4444; }
         .bg-accent-red { background-color: #EF4444; }
         .border-accent-red { border-color: #EF4444; }
-        .scroll-smooth { scroll-behavior: smooth; }
     </style>
 </head>
-<body class="bg-gray-50 text-gray-800 font-sans scroll-smooth">
+<body class="bg-gray-50 text-gray-800 font-sans">
 
-    <nav class="bg-slate-800 text-white sticky top-0 z-50 shadow-lg">
+    <nav class="bg-slate-800 text-white sticky top-0 z-50 shadow-lg" role="navigation">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-16 items-center">
                 <div class="flex items-center gap-3">
-                    <img 
-                        src="assets/MBO logo white.jpeg" 
-                        alt="MBO Inc Logo" 
-                        class="h-10 w-auto rounded shadow-sm block"
-                    >
+                    <img src="assets/MBO logo white.jpeg" alt="MBO Inc Corporate Logo" class="h-10 w-auto rounded shadow-sm">
                     <span class="text-2xl font-bold tracking-tight">
                         <span class="text-teal-400">MBO</span><span class="text-white"> Inc.</span>
                     </span>
@@ -41,133 +75,133 @@
         </div>
     </nav>
 
-    <header class="relative bg-slate-900 py-24 lg:py-32 overflow-hidden">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="lg:w-2/3">
-                <h1 class="text-4xl md:text-6xl font-extrabold text-white leading-tight mb-6">
-                    Architecting the Future of <span class="text-teal-400">Integrated Business.</span>
-                </h1>
-                <p class="text-lg text-gray-300 mb-8 max-w-xl">
-                    Mboulaye Business Organizations (MBO Inc.) delivers cutting-edge digital solutions and strategic management frameworks designed to streamline operations and drive sustainable growth.
+    <main>
+        <header class="relative bg-slate-900 py-24 lg:py-32 overflow-hidden">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="lg:w-2/3">
+                    <h1 class="text-4xl md:text-6xl font-extrabold text-white leading-tight mb-6">
+                        Architecting the Future of <span class="text-teal-400">Integrated Business.</span>
+                    </h1>
+                    <p class="text-lg text-gray-300 mb-8 max-w-xl">
+                        Mboulaye Business Organizations (MBO Inc.) delivers cutting-edge digital solutions and strategic management frameworks designed to streamline operations and drive sustainable growth.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#projects" class="bg-teal-600 hover:bg-teal-700 text-white px-8 py-3 rounded-md font-bold transition">View Our Work</a>
+                        <a href="#contact" class="border-2 border-accent-red text-white hover:bg-accent-red px-8 py-3 rounded-md font-bold transition">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+            <div class="absolute right-0 top-0 h-full w-1/2 opacity-20 hidden lg:block">
+                <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=1000" alt="Futuristic Global Connectivity and AI Technology" class="object-cover h-full w-full skew-x-12 transform translate-x-20">
+            </div>
+        </header>
+
+        <section id="about" class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl font-bold text-slate-800 mb-4">Precision. Innovation. Integration.</h2>
+                <div class="w-20 h-1 bg-accent-red mx-auto mb-8"></div>
+                <p class="text-gray-600 max-w-3xl mx-auto text-lg leading-relaxed">
+                    As a multi-disciplinary organization in Cameroon, we bridge the gap between technical innovation and practical business application. From bespoke EdTech to large-scale logistics, MBO Inc. builds systems that empower professionals.
                 </p>
-                <div class="flex flex-wrap gap-4">
-                    <a href="#projects" class="bg-teal-600 hover:bg-teal-700 text-white px-8 py-3 rounded-md font-bold transition">View Our Work</a>
-                    <a href="#contact" class="border-2 border-accent-red text-white hover:bg-accent-red px-8 py-3 rounded-md font-bold transition">Contact Us</a>
+            </div>
+        </section>
+
+        <section id="services" class="py-20 bg-gray-100">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid md:grid-cols-3 gap-8">
+                    <article class="bg-white p-8 rounded-lg shadow-sm border-t-4 border-teal-500 hover:shadow-md transition">
+                        <div class="text-teal-500 text-3xl mb-4"><i class="fas fa-code" aria-hidden="true"></i></div>
+                        <h3 class="text-xl font-bold text-slate-800 mb-3">Software Development</h3>
+                        <p class="text-gray-600 text-sm">Custom web and mobile applications tailored to specific organizational workflows, built with PHP, Python, and modern tech stacks.</p>
+                    </article>
+                    <article class="bg-white p-8 rounded-lg shadow-sm border-t-4 border-slate-700 hover:shadow-md transition">
+                        <div class="text-slate-700 text-3xl mb-4"><i class="fas fa-microscope" aria-hidden="true"></i></div>
+                        <h3 class="text-xl font-bold text-slate-800 mb-3">Academic Research</h3>
+                        <p class="text-gray-600 text-sm">Expert analysis on digitalization, AI integration, and the impact of automation on professional wellbeing.</p>
+                    </article>
+                    <article class="bg-white p-8 rounded-lg shadow-sm border-t-4 border-accent-red hover:shadow-md transition">
+                        <div class="text-accent-red text-3xl mb-4"><i class="fas fa-seedling" aria-hidden="true"></i></div>
+                        <h3 class="text-xl font-bold text-slate-800 mb-3">Resource Logistics</h3>
+                        <p class="text-gray-600 text-sm">Strategic planning for large-scale agricultural projects and nursery management for cocoa and sustainable farming.</p>
+                    </article>
                 </div>
             </div>
-        </div>
-        <div class="absolute right-0 top-0 h-full w-1/2 opacity-20 hidden lg:block">
-            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=1000" alt="Technology Background" class="object-cover h-full w-full skew-x-12 transform translate-x-20">
-        </div>
-    </header>
+        </section>
 
-    <section id="about" class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 class="text-3xl font-bold text-slate-800 mb-4 text-center">Precision. Innovation. Integration.</h2>
-            <div class="w-20 h-1 bg-accent-red mx-auto mb-8"></div>
-            <p class="text-gray-600 max-w-3xl mx-auto text-lg leading-relaxed">
-                As a multi-disciplinary organization, we bridge the gap between technical innovation and practical business application. From developing bespoke educational platforms to managing large-scale resource logistics, MBO Inc. is dedicated to building systems that empower professionals and institutions.
-            </p>
-        </div>
-    </section>
-
-    <section id="services" class="py-20 bg-gray-100">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-white p-8 rounded-lg shadow-sm border-t-4 border-teal-500 hover:shadow-md transition">
-                    <div class="text-teal-500 text-3xl mb-4"><i class="fas fa-code"></i></div>
-                    <h3 class="text-xl font-bold text-slate-800 mb-3">Software Development</h3>
-                    <p class="text-gray-600 text-sm">Custom web and mobile applications tailored to specific organizational workflows, built with modern tech stacks.</p>
-                </div>
-                <div class="bg-white p-8 rounded-lg shadow-sm border-t-4 border-slate-700 hover:shadow-md transition">
-                    <div class="text-slate-700 text-3xl mb-4"><i class="fas fa-microscope"></i></div>
-                    <h3 class="text-xl font-bold text-slate-800 mb-3">Academic Research</h3>
-                    <p class="text-gray-600 text-sm">Expert analysis on digitalization, AI integration, and professional wellbeing in the modern era.</p>
-                </div>
-                <div class="bg-white p-8 rounded-lg shadow-sm border-t-4 border-accent-red hover:shadow-md transition">
-                    <div class="text-accent-red text-3xl mb-4"><i class="fas fa-seedling"></i></div>
-                    <h3 class="text-xl font-bold text-slate-800 mb-3">Resource Logistics</h3>
-                    <p class="text-gray-600 text-sm">Strategic planning and oversight for large-scale agricultural projects and plantation nurseries.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-  <section id="projects" class="py-20 bg-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-3xl font-bold text-slate-800 mb-12 border-l-4 border-teal-500 pl-4">Flagship Projects</h2>
-        <div class="grid md:grid-cols-2 gap-12">
-            
-            <div class="group">
-                <div class="relative overflow-hidden rounded-lg mb-6 shadow-md">
-                    <img src="https://images.unsplash.com/photo-1501504905252-473c47e087f8?auto=format&fit=crop&q=80&w=800" alt="iwedu project" class="w-full h-72 object-cover group-hover:scale-105 transition duration-500">
-                    <div class="absolute inset-0 bg-slate-900 bg-opacity-40 group-hover:bg-opacity-20 transition flex items-center justify-center">
-                        <a href="iwedu.html" class="opacity-0 group-hover:opacity-100 bg-white text-slate-900 px-6 py-2 rounded-full font-bold transition transform translate-y-4 group-hover:translate-y-0">
-                            View Case Study
+        <section id="projects" class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-slate-800 mb-12 border-l-4 border-teal-500 pl-4">Flagship Projects</h2>
+                <div class="grid md:grid-cols-2 gap-12">
+                    
+                    <article class="group">
+                        <div class="relative overflow-hidden rounded-lg mb-6 shadow-md">
+                            <img src="https://images.unsplash.com/photo-1501504905252-473c47e087f8?auto=format&fit=crop&q=80&w=800" alt="iwedu School Management Software" class="w-full h-72 object-cover group-hover:scale-105 transition duration-500">
+                            <div class="absolute inset-0 bg-slate-900 bg-opacity-40 group-hover:bg-opacity-20 transition flex items-center justify-center">
+                                <a href="iwedu.html" class="opacity-0 group-hover:opacity-100 bg-white text-slate-900 px-6 py-2 rounded-full font-bold transition transform translate-y-4 group-hover:translate-y-0">
+                                    View Case Study
+                                </a>
+                            </div>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-2 flex items-center gap-2">
+                            iwedu <span class="text-xs bg-teal-100 text-teal-700 px-2 py-1 rounded">EdTech</span>
+                        </h3>
+                        <p class="text-gray-600 mb-4">
+                            A comprehensive school management system designed to revolutionize digital learning and institutional data tracking.
+                        </p>
+                        <a href="iwedu.html" class="text-teal-600 font-bold hover:text-teal-700 inline-flex items-center gap-2 group/link">
+                            Explore the Ecosystem 
+                            <i class="fas fa-arrow-right text-sm transform group-hover/link:translate-x-1 transition"></i>
                         </a>
+                    </article>
+
+                    <article class="group">
+                        <div class="relative overflow-hidden rounded-lg mb-6 shadow-md">
+                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800" alt="MR Shops E-commerce Platform" class="w-full h-72 object-cover group-hover:scale-105 transition duration-500">
+                            <div class="absolute inset-0 bg-slate-900 bg-opacity-40 group-hover:bg-opacity-20 transition"></div>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-2 flex items-center gap-2">
+                            MR Shops <span class="text-xs bg-accent-red bg-opacity-10 text-red-600 px-2 py-1 rounded">E-Commerce</span>
+                        </h3>
+                        <p class="text-gray-600 mb-4">
+                            A scalable, multi-shop e-commerce ecosystem built for modern retail dynamics and seamless logistics.
+                        </p>
+                        <span class="text-slate-400 text-sm italic font-medium">Case study coming soon</span>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-20 bg-slate-900 text-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl font-bold mb-4">Let's Integrate Your Vision</h2>
+                <div class="w-16 h-1 bg-teal-500 mx-auto mb-8"></div>
+                <p class="mb-12 text-gray-400">Headquartered in Buea, Cameroon. Operating Globally.</p>
+                
+                <div class="flex flex-col md:flex-row justify-center items-center gap-12">
+                    <div class="flex items-center gap-4 group">
+                        <div class="w-12 h-12 rounded-full border border-teal-500 flex items-center justify-center group-hover:bg-teal-500 transition">
+                            <i class="fas fa-envelope text-teal-400 group-hover:text-white" aria-hidden="true"></i>
+                        </div>
+                        <a href="mailto:info@mymbo.org" class="text-lg hover:text-teal-400 transition">info@mymbo.org</a>
+                    </div>
+                    <div class="flex items-center gap-4 group">
+                        <div class="w-12 h-12 rounded-full border border-accent-red flex items-center justify-center group-hover:bg-accent-red transition">
+                            <i class="fas fa-globe text-accent-red group-hover:text-white" aria-hidden="true"></i>
+                        </div>
+                        <a href="https://www.mymbo.org" class="text-lg hover:text-red-400 transition">www.mymbo.org</a>
                     </div>
                 </div>
-                <h4 class="text-2xl font-bold mb-2 flex items-center gap-2">
-                    iwedu <span class="text-xs bg-teal-100 text-teal-700 px-2 py-1 rounded">EdTech</span>
-                </h4>
-                <p class="text-gray-600 mb-4">
-                    A comprehensive web-based utility designed to revolutionize school management and digital learning environments through integrated data tracking.
-                </p>
-                <a href="iwedu.html" class="text-teal-600 font-bold hover:text-teal-700 inline-flex items-center gap-2 group/link">
-                    Read more about the ecosystem 
-                    <i class="fas fa-arrow-right text-sm transform group-hover/link:translate-x-1 transition"></i>
-                </a>
             </div>
+        </section>
+    </main>
 
-            <div class="group">
-                <div class="relative overflow-hidden rounded-lg mb-6 shadow-md">
-                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800" alt="MR Shops project" class="w-full h-72 object-cover group-hover:scale-105 transition duration-500">
-                    <div class="absolute inset-0 bg-slate-900 bg-opacity-40 group-hover:bg-opacity-20 transition"></div>
-                </div>
-                <h4 class="text-2xl font-bold mb-2 flex items-center gap-2">
-                    MR Shops <span class="text-xs bg-accent-red bg-opacity-10 text-red-600 px-2 py-1 rounded">E-Commerce</span>
-                </h4>
-                <p class="text-gray-600 mb-4">
-                    A scalable, multi-shop e-commerce ecosystem built for modern retail dynamics, focusing on seamless buyer-seller interaction.
-                </p>
-                <span class="text-slate-400 text-sm italic font-medium cursor-default">Full case study coming soon</span>
-            </div>
-
+    <footer class="bg-slate-950 py-12 text-center border-t border-slate-900">
+        <div class="flex justify-center mb-6">
+            <img src="assets/MBO logo white.jpeg" alt="MBO Inc Logo" class="h-10 w-auto rounded opacity-80">
         </div>
-    </div>
-</section>
-    <section id="contact" class="py-20 bg-slate-900 text-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 class="text-3xl font-bold mb-4">Let's Integrate Your Vision</h2>
-            <div class="w-16 h-1 bg-teal-500 mx-auto mb-8"></div>
-            <p class="mb-12 text-gray-400">Headquartered in Buea, Cameroon. Operating Globally.</p>
-            
-            <div class="flex flex-col md:flex-row justify-center items-center gap-12">
-                <div class="flex items-center gap-4 group">
-                    <div class="w-12 h-12 rounded-full border border-teal-500 flex items-center justify-center group-hover:bg-teal-500 transition">
-                        <i class="fas fa-envelope text-teal-400 group-hover:text-white"></i>
-                    </div>
-                    <span class="text-lg">info@mymbo.org</span>
-                </div>
-                <div class="flex items-center gap-4 group">
-                    <div class="w-12 h-12 rounded-full border border-accent-red flex items-center justify-center group-hover:bg-accent-red transition">
-                        <i class="fas fa-globe text-accent-red group-hover:text-white"></i>
-                    </div>
-                    <span class="text-lg">www.mymbo.org</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer class="bg-slate-950 py-10 text-center border-t border-slate-900">
-        <div class="mb-6">
-        <img 
-                        src="assets/MBO logo white.jpeg" 
-                        alt="MBO Inc Logo" 
-                        class="h-10 w-auto rounded shadow-sm block"
-                    >        </div>
-        <p class="text-gray-500 text-sm px-4">
-            &copy; 2026 Mboulaye Business Organizations (MBO Inc.). All Rights Reserved.
+        <p class="text-gray-500 text-sm px-4 leading-loose">
+            &copy; 2026 Mboulaye Business Organizations (MBO Inc.). All Rights Reserved.<br>
+            Pioneering digital excellence and sustainable integration.
         </p>
     </footer>
 
