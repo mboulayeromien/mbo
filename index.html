@@ -1,825 +1,242 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
-
 <head>
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KK162G4T14"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'G-KK162G4T14');
-    </script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KK162G4T14"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-KK162G4T14');
+</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>MBO Inc. | Mboulaye Business Organizations - Tech & Logistics</title>
+    <meta name="title" content="MBO Inc. | Mboulaye Business Organizations - Tech & Logistics">
+    <meta name="description" content="Mboulaye Business Organizations (MBO Inc.) provides cutting-edge digital solutions, academic research on AI and digitalization, and resource logistics. Based in Buea, Cameroon.">
+    <meta name="keywords" content="MBO Inc, Mboulaye Business Organizations, Software Development Cameroon, EdTech Cameroon, iwedu, iEduSec, Secondary School ERP, AI Research, Business Logistics Buea, Digital Transformation">
+    <meta name="author" content="Mboulaye Romien">
 
-    <title>MBO Inc. | Gateway Integration Application – Service Catalog & Merchant Profile</title>
-    <meta name="title" content="MBO Inc. | Gateway Integration Application – Service Catalog & Merchant Profile">
-    <meta name="description"
-        content="Official merchant verification profile for Mboulaye Business Organizations (MBO Inc.). Full catalog of school management services, pricing, business model, and compliance documentation for payment gateway review.">
-    <meta name="keywords"
-        content="MBO Inc merchant, gateway provider application, school management SaaS Cameroon, iwedu ERP, tuition payment gateway, EdTech merchant Africa">
-    <meta name="author" content="MBO Inc.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.mymbo.org/">
+    <meta property="og:title" content="MBO Inc. | Architecting the Future of Integrated Business">
+    <meta property="og:description" content="Bespoke software, academic research, and strategic logistics. Home of the iwedu school management ecosystem.">
+    <meta property="og:image" content="assets/MBO logo white.jpeg">
 
-    <script src="https://cdn.tailwindcss.com"></script>
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="MBO Inc. | Mboulaye Business Organizations">
+    <meta property="twitter:description" content="Innovative digital systems and strategic management frameworks for global growth.">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Mboulaye Business Organizations",
+      "alternateName": "MBO Inc.",
+      "url": "https://www.mymbo.org",
+      "logo": "https://www.mymbo.org/assets/MBO%20logo%20white.jpeg",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "email": "info@mymbo.org",
+        "contactType": "customer service"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Buea",
+        "addressCountry": "CM"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/company/mbo-inc"
+      ]
+    }
+    </script>
+
     <link rel="icon" type="image/png" href="assets/MBO logo white.jpeg">
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
+    
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
-
-        body {
-            font-family: 'Inter', sans-serif;
-        }
-
-        .accent-teal {
-            color: #0d9488;
-        }
-
-        .gradient-hero {
-            background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #134e4a 100%);
-        }
-
-        .category-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 4px;
-            font-size: 10px;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0.08em;
-            padding: 3px 10px;
-            border-radius: 999px;
-        }
-
-        .service-row:hover {
-            background-color: #f8fafc;
-        }
-
-        .stat-card {
-            background: linear-gradient(135deg, #f0fdfa, #f8fafc);
-        }
-
-        .print-hint {
-            display: none;
-        }
-
-        @media print {
-            .no-print {
-                display: none !important;
-            }
-
-            .print-hint {
-                display: block;
-            }
-        }
+        .accent-red { color: #EF4444; }
+        .bg-accent-red { background-color: #EF4444; }
+        .border-accent-red { border-color: #EF4444; }
     </style>
 </head>
+<body class="bg-gray-50 text-gray-800 font-sans">
 
-<body class="bg-gray-50 text-slate-800 min-h-screen flex flex-col">
-
-    <!-- ============================================================
-         SECTION 0: STICKY NAVIGATION
-    ============================================================ -->
-    <nav class="bg-slate-900 text-white sticky top-0 z-50 shadow-lg no-print">
+    <nav class="bg-slate-800 text-white sticky top-0 z-50 shadow-lg" role="navigation">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-14 items-center">
+            <div class="flex justify-between h-16 items-center">
                 <div class="flex items-center gap-3">
-                    <img src="assets/MBO logo white.jpeg" alt="MBO Inc Logo" class="h-8 w-auto rounded">
-                    <span class="font-extrabold text-lg tracking-tight"><span class="text-teal-400">MBO</span>
-                        Inc.</span>
-                    <span
-                        class="hidden md:inline text-gray-500 text-xs font-medium border-l border-gray-700 pl-3 ml-1">Gateway
-                        Integration Application</span>
+                    <img src="assets/MBO logo white.jpeg" alt="MBO Inc Corporate Logo" class="h-10 w-auto rounded shadow-sm">
+                    <span class="text-2xl font-bold tracking-tight">
+                        <span class="text-teal-400">MBO</span><span class="text-white"> Inc.</span>
+                    </span>
                 </div>
-                <div class="flex items-center gap-5 text-xs font-semibold uppercase tracking-wider">
-                    <a href="#about" class="hover:text-teal-400 transition hidden md:inline">About</a>
-                    <a href="#services" class="hover:text-teal-400 transition hidden md:inline">Services</a>
-                    <a href="#model" class="hover:text-teal-400 transition hidden md:inline">Model</a>
-                    <a href="#compliance" class="hover:text-teal-400 transition hidden md:inline">Policies</a>
-                    <a href="#contact"
-                        class="bg-teal-600 hover:bg-teal-700 px-4 py-1.5 rounded text-white transition">Contact</a>
+                <div class="hidden md:flex space-x-8 font-medium text-sm uppercase tracking-wider">
+                    <a href="#about" class="hover:text-teal-400 transition">About</a>
+                    <a href="#services" class="hover:text-teal-400 transition">Services</a>
+                    <a href="#projects" class="hover:text-teal-400 transition">Portfolio</a>
+                    <a href="#contact" class="bg-teal-600 hover:bg-teal-700 px-4 py-2 rounded text-white transition shadow-md">Get in Touch</a>
                 </div>
             </div>
         </div>
     </nav>
 
-    <!-- ============================================================
-         SECTION 1: APPLICATION HERO — WHO WE ARE
-    ============================================================ -->
-    <header id="about" class="gradient-hero text-white py-16 md:py-20">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-10">
-
-                <!-- Left: Company Identity -->
-                <div class="lg:w-3/5">
-
-                    <h1 class="text-3xl md:text-5xl font-extrabold leading-tight mb-5">
-                        Mboulaye Business Organizations<br>
-                        <span class="text-teal-400">(MBO Inc.)</span>
+    <main>
+        <header class="relative bg-slate-900 py-24 lg:py-32 overflow-hidden">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="lg:w-2/3">
+                    <h1 class="text-4xl md:text-6xl font-extrabold text-white leading-tight mb-6">
+                        Architecting the Future of <span class="text-teal-400">Integrated Business.</span>
                     </h1>
-                    <p class="text-gray-300 text-md md:text-lg leading-relaxed max-w-2xl mb-8">
-                        MBO Inc. is a registered EdTech and business services firm based in Kumba, Cameroon. We develop
-                        and operate <strong class="text-white">iwedu</strong>, a web-based school management ERP
-                        deployed in higher education institutions. This page provides a complete service catalog,
-                        pricing structure, business model description, and legal compliance framework.
+                    <p class="text-lg text-gray-300 mb-8 max-w-xl">
+                        Mboulaye Business Organizations (MBO Inc.) delivers cutting-edge digital solutions and strategic management frameworks designed to streamline operations and drive sustainable growth.
+                    </p>
                     <div class="flex flex-wrap gap-4">
-                        <a href="#services"
-                            class="bg-teal-600 hover:bg-teal-700 text-white px-6 py-2.5 rounded-lg font-bold text-sm transition">
-                            <i class="fas fa-list mr-2"></i>View Services Catalog
-                        </a>
-                        <a href="#compliance"
-                            class="border border-white/30 hover:border-teal-400 text-white hover:text-teal-400 px-6 py-2.5 rounded-lg font-bold text-sm transition">
-                            <i class="fas fa-shield-alt mr-2"></i>Policies & Compliance
-                        </a>
+                        <a href="#projects" class="bg-teal-600 hover:bg-teal-700 text-white px-8 py-3 rounded-md font-bold transition">View Our Work</a>
+                        <a href="#contact" class="border-2 border-accent-red text-white hover:bg-accent-red px-8 py-3 rounded-md font-bold transition">Contact Us</a>
                     </div>
                 </div>
-
-                <!-- Right: Key Facts Panel -->
-                <div class="lg:w-2/5">
-                    <div class="bg-white/10 backdrop-blur-sm border border-white/10 rounded-2xl p-6 space-y-4">
-                        <h2 class="text-sm font-bold uppercase tracking-widest text-teal-400 mb-4">Merchant Identity
-                            Summary</h2>
-                        <div class="space-y-3 text-sm">
-                            <div class="flex gap-3">
-                                <i class="fas fa-building text-teal-400 w-5 mt-0.5 flex-shrink-0"></i>
-                                <div>
-                                    <span class="text-gray-400 block text-xs">Registered Legal Name</span>
-                                    <span class="text-white font-semibold">Mboulaye Business Organizations (MBO
-                                        Inc.)</span>
-                                </div>
-                            </div>
-                            <div class="flex gap-3">
-                                <i class="fas fa-map-marker-alt text-teal-400 w-5 mt-0.5 flex-shrink-0"></i>
-                                <div>
-                                    <span class="text-gray-400 block text-xs">Physical Address</span>
-                                    <span class="text-white font-semibold">Kumba, Southwest Region, Cameroon</span>
-                                </div>
-                            </div>
-                            <div class="flex gap-3">
-                                <i class="fas fa-industry text-teal-400 w-5 mt-0.5 flex-shrink-0"></i>
-                                <div>
-                                    <span class="text-gray-400 block text-xs">Industry / Business Sector</span>
-                                    <span class="text-white font-semibold">EdTech SaaS / Higher Education
-                                        Services</span>
-                                </div>
-                            </div>
-                            <div class="flex gap-3">
-                                <i class="fas fa-globe text-teal-400 w-5 mt-0.5 flex-shrink-0"></i>
-                                <div>
-                                    <span class="text-gray-400 block text-xs">Website</span>
-                                    <a href="https://www.mymbo.org"
-                                        class="text-teal-400 font-semibold hover:underline">www.mymbo.org</a>
-                                </div>
-                            </div>
-                            <div class="flex gap-3">
-                                <i class="fas fa-envelope text-teal-400 w-5 mt-0.5 flex-shrink-0"></i>
-                                <div>
-                                    <span class="text-gray-400 block text-xs">Business Email</span>
-                                    <a href="mailto:info@mymbo.org"
-                                        class="text-teal-400 font-semibold hover:underline">info@mymbo.org</a>
-                                </div>
-                            </div>
-                            <div class="flex gap-3">
-                                <i class="fas fa-phone text-teal-400 w-5 mt-0.5 flex-shrink-0"></i>
-                                <div>
-                                    <span class="text-gray-400 block text-xs">Phone</span>
-                                    <a href="tel:+237679897892" class="text-white font-semibold">+237 679 897 892</a>
-                                </div>
-                            </div>
-                            <div class="flex gap-3">
-                                <i class="fas fa-money-bill-wave text-teal-400 w-5 mt-0.5 flex-shrink-0"></i>
-                                <div>
-                                    <span class="text-gray-400 block text-xs">Transaction Currency</span>
-                                    <span class="text-white font-semibold">XAF (Central African CFA Franc)</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
             </div>
-        </div>
-    </header>
+            <div class="absolute right-0 top-0 h-full w-1/2 opacity-20 hidden lg:block">
+                <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=1000" alt="Futuristic Global Connectivity and AI Technology" class="object-cover h-full w-full skew-x-12 transform translate-x-20">
+            </div>
+        </header>
 
-    <!-- ============================================================
-         SECTION 2: PLATFORM OVERVIEW + KEY STATS
-    ============================================================ -->
-    <section class="bg-white py-14 border-b border-gray-100">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12">
-                <span class="text-xs uppercase text-teal-600 font-bold tracking-widest">What We Do</span>
-                <h2 class="text-2xl md:text-3xl font-extrabold text-slate-900 mt-2">The iwedu School Management
-                    Ecosystem</h2>
-                <p class="text-gray-500 mt-3 text-sm max-w-2xl mx-auto">MBO Inc. builds, hosts, and operates
-                    <strong>iwedu</strong> — a school ERP deployed in higher education institutions across
-                    Cameroon and beyond. Payment gateway integration is required to handle tuition fees, digital
-                    registrations, and premium EdTech add-on purchases.
+        <section id="about" class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl font-bold text-slate-800 mb-4">Precision. Innovation. Integration.</h2>
+                <div class="w-20 h-1 bg-accent-red mx-auto mb-8"></div>
+                <p class="text-gray-600 max-w-3xl mx-auto text-lg leading-relaxed">
+                    As a multi-disciplinary organization in Cameroon, we bridge the gap between technical innovation and practical business application. From bespoke EdTech to large-scale logistics, MBO Inc. builds systems that empower professionals.
                 </p>
             </div>
+        </section>
 
-            <!-- Stats Row -->
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
-                <div class="stat-card p-5 rounded-xl border border-teal-100 text-center">
-                    <div class="text-3xl font-black text-teal-600">34</div>
-                    <div class="text-xs text-gray-500 font-semibold uppercase tracking-wider mt-1">Billable Services
-                    </div>
-                </div>
-                <div class="stat-card p-5 rounded-xl border border-teal-100 text-center">
-                    <div class="text-3xl font-black text-teal-600">12</div>
-                    <div class="text-xs text-gray-500 font-semibold uppercase tracking-wider mt-1">User Role Portals
-                    </div>
-                </div>
-                <div class="stat-card p-5 rounded-xl border border-teal-100 text-center">
-                    <div class="text-3xl font-black text-teal-600">500</div>
-                    <div class="text-xs text-gray-500 font-semibold uppercase tracking-wider mt-1">XAF — Min.
-                        Transaction</div>
-                </div>
-                <div class="stat-card p-5 rounded-xl border border-teal-100 text-center">
-                    <div class="text-3xl font-black text-teal-600">450k</div>
-                    <div class="text-xs text-gray-500 font-semibold uppercase tracking-wider mt-1">XAF — Max.
-                        Transaction</div>
+        <section id="services" class="py-20 bg-gray-100">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid md:grid-cols-3 gap-8">
+                    <article class="bg-white p-8 rounded-lg shadow-sm border-t-4 border-teal-500 hover:shadow-md transition">
+                        <div class="text-teal-500 text-3xl mb-4"><i class="fas fa-code" aria-hidden="true"></i></div>
+                        <h3 class="text-xl font-bold text-slate-800 mb-3">Software Development</h3>
+                        <p class="text-gray-600 text-sm">Custom web and mobile applications tailored to specific organizational workflows, built with PHP, Python, and modern tech stacks.</p>
+                    </article>
+                    <article class="bg-white p-8 rounded-lg shadow-sm border-t-4 border-slate-700 hover:shadow-md transition">
+                        <div class="text-slate-700 text-3xl mb-4"><i class="fas fa-microscope" aria-hidden="true"></i></div>
+                        <h3 class="text-xl font-bold text-slate-800 mb-3">Academic Research</h3>
+                        <p class="text-gray-600 text-sm">Expert analysis on digitalization, AI integration, and the impact of automation on professional wellbeing.</p>
+                    </article>
+                    <article class="bg-white p-8 rounded-lg shadow-sm border-t-4 border-accent-red hover:shadow-md transition">
+                        <div class="text-accent-red text-3xl mb-4"><i class="fas fa-seedling" aria-hidden="true"></i></div>
+                        <h3 class="text-xl font-bold text-slate-800 mb-3">Resource Logistics</h3>
+                        <p class="text-gray-600 text-sm">Strategic planning for large-scale agricultural projects and nursery management for cocoa and sustainable farming.</p>
+                    </article>
                 </div>
             </div>
+        </section>
 
-            <!-- Platform Description -->
-            <div class="grid md:grid-cols-3 gap-6">
-                <div class="p-6 rounded-xl border border-gray-100 bg-gray-50">
-                    <div
-                        class="w-10 h-10 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center mb-4 text-lg">
-                        <i class="fas fa-university"></i>
-                    </div>
-                    <h3 class="text-base font-bold text-slate-800 mb-2">Who Pays</h3>
-                    <p class="text-sm text-gray-600 leading-relaxed">Students, parents, School Admins, Lecturers, and
-                        guardians enrolled in partner educational institutions. All payers are registered users with
-                        verified matricule numbers in the database before any payment is authorized.</p>
-                </div>
-                <div class="p-6 rounded-xl border border-gray-100 bg-gray-50">
-                    <div
-                        class="w-10 h-10 bg-teal-100 text-teal-600 rounded-lg flex items-center justify-center mb-4 text-lg">
-                        <i class="fas fa-server"></i>
-                    </div>
-                    <h3 class="text-base font-bold text-slate-800 mb-2">What They Pay For</h3>
-                    <p class="text-sm text-gray-600 leading-relaxed">School fees (tuition), student accommodation/hostel
-                        bookings, administrative registrations, official document downloads, and access tokens to
-                        advanced digital EdTech modules like AI diagnostics, blockchain certificates, and analytics
-                        dashboards.</p>
-                </div>
-                <div class="p-6 rounded-xl border border-gray-100 bg-gray-50">
-                    <div
-                        class="w-10 h-10 bg-indigo-100 text-indigo-600 rounded-lg flex items-center justify-center mb-4 text-lg">
-                        <i class="fas fa-code-branch"></i>
-                    </div>
-                    <h3 class="text-base font-bold text-slate-800 mb-2">How Funds Are Routed</h3>
-                    <p class="text-sm text-gray-600 leading-relaxed">MBO Inc. uses a database-enforced split-settlement
-                        model. Core academic fees go directly to the institution's merchant account (100%). MBO platform
-                        utility charges are retained by MBO Inc. (100%). Some fees (e.g. Transcripts) are divided 50/50.
-                    </p>
+        <section id="projects" class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-slate-800 mb-12 border-l-4 border-teal-500 pl-4">Flagship Projects</h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                    
+                    <article class="group">
+                        <div class="relative overflow-hidden rounded-lg mb-6 shadow-md">
+                            <img src="https://images.unsplash.com/photo-1501504905252-473c47e087f8?auto=format&fit=crop&q=80&w=800" alt="iwedu School Management Software" class="w-full h-72 object-cover group-hover:scale-105 transition duration-500">
+                            <div class="absolute inset-0 bg-slate-900 bg-opacity-40 group-hover:bg-opacity-20 transition flex items-center justify-center">
+                                <a href="iwedu.html" class="opacity-0 group-hover:opacity-100 bg-white text-slate-900 px-6 py-2 rounded-full font-bold transition transform translate-y-4 group-hover:translate-y-0">
+                                    View Case Study
+                                </a>
+                            </div>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-2 flex items-center gap-2">
+                            iwedu <span class="text-xs bg-teal-100 text-teal-700 px-2 py-1 rounded">EdTech</span>
+                        </h3>
+                        <p class="text-gray-600 mb-4">
+                            A comprehensive school management system designed specifically for higher education institutions to revolutionize digital learning and institutional data tracking.
+                        </p>
+                        <a href="iwedu.html" class="text-teal-600 font-bold hover:text-teal-700 inline-flex items-center gap-2 group/link">
+                            Explore the Ecosystem 
+                            <i class="fas fa-arrow-right text-sm transform group-hover/link:translate-x-1 transition"></i>
+                        </a>
+                    </article>
+
+                    <article class="group">
+                        <div class="relative overflow-hidden rounded-lg mb-6 shadow-md">
+                            <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&q=80&w=800" alt="iEduSec Secondary School ERP" class="w-full h-72 object-cover group-hover:scale-105 transition duration-500">
+                            <div class="absolute inset-0 bg-slate-900 bg-opacity-40 group-hover:bg-opacity-20 transition flex items-center justify-center">
+                                <a href="iedusec.html" class="opacity-0 group-hover:opacity-100 bg-white text-slate-900 px-6 py-2 rounded-full font-bold transition transform translate-y-4 group-hover:translate-y-0">
+                                    View Case Study
+                                </a>
+                            </div>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-2 flex items-center gap-2">
+                            iEduSec <span class="text-xs bg-teal-100 text-teal-700 px-2 py-1 rounded">EdTech</span>
+                        </h3>
+                        <p class="text-gray-600 mb-4">
+                            A specialized school management ERP built for secondary institutions, featuring dual-section support and early warning metrics.
+                        </p>
+                        <a href="iedusec.html" class="text-teal-600 font-bold hover:text-teal-700 inline-flex items-center gap-2 group/link">
+                            Explore the Ecosystem 
+                            <i class="fas fa-arrow-right text-sm transform group-hover/link:translate-x-1 transition"></i>
+                        </a>
+                    </article>
+
+                    <article class="group">
+                        <div class="relative overflow-hidden rounded-lg mb-6 shadow-md">
+                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800" alt="MR Shops E-commerce Platform" class="w-full h-72 object-cover group-hover:scale-105 transition duration-500">
+                            <div class="absolute inset-0 bg-slate-900 bg-opacity-40 group-hover:bg-opacity-20 transition flex items-center justify-center">
+                                <span class="opacity-0 group-hover:opacity-100 bg-white text-slate-900 px-6 py-2 rounded-full font-bold transition transform translate-y-4 group-hover:translate-y-0 cursor-default">
+                                    Case study coming soon
+                                </span>
+                            </div>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-2 flex items-center gap-2">
+                            MR Shops <span class="text-xs bg-accent-red bg-opacity-10 text-red-600 px-2 py-1 rounded">E-Commerce</span>
+                        </h3>
+                        <p class="text-gray-600 mb-4">
+                            A scalable, multi-shop e-commerce ecosystem built for modern retail dynamics and seamless logistics.
+                        </p>
+                        <span class="text-slate-400 text-sm italic font-medium">Case study coming soon</span>
+                    </article>
                 </div>
             </div>
+        </section>
+
+        <section id="contact" class="py-20 bg-slate-900 text-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl font-bold mb-4">Let's Integrate Your Vision</h2>
+                <div class="w-16 h-1 bg-teal-500 mx-auto mb-8"></div>
+                <p class="mb-12 text-gray-400">Headquartered in Buea, Cameroon. Operating Globally.</p>
+                
+                <div class="flex flex-col md:flex-row justify-center items-center gap-12">
+                    <div class="flex items-center gap-4 group">
+                        <div class="w-12 h-12 rounded-full border border-teal-500 flex items-center justify-center group-hover:bg-teal-500 transition">
+                            <i class="fas fa-envelope text-teal-400 group-hover:text-white" aria-hidden="true"></i>
+                        </div>
+                        <a href="mailto:info@mymbo.org" class="text-lg hover:text-teal-400 transition">info@mymbo.org</a>
+                    </div>
+                    <div class="flex items-center gap-4 group">
+                        <div class="w-12 h-12 rounded-full border border-accent-red flex items-center justify-center group-hover:bg-accent-red transition">
+                            <i class="fas fa-globe text-accent-red group-hover:text-white" aria-hidden="true"></i>
+                        </div>
+                        <a href="https://www.mymbo.org" class="text-lg hover:text-red-400 transition">www.mymbo.org</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-slate-950 py-12 text-center border-t border-slate-900">
+        <div class="flex justify-center mb-6">
+            <img src="assets/MBO logo white.jpeg" alt="MBO Inc Logo" class="h-10 w-auto rounded opacity-80">
         </div>
-    </section>
-
-    <!-- ============================================================
-         SECTION 3: FULL SERVICES CATALOG TABLE
-    ============================================================ -->
-    <section id="services" class="py-16">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-10">
-                <div>
-                    <span class="text-xs uppercase text-teal-600 font-bold tracking-widest">Full Service Registry</span>
-                    <h2 class="text-2xl md:text-3xl font-extrabold text-slate-900 mt-2">Official Services & Pricing
-                        Catalog</h2>
-                    <p class="text-gray-500 mt-2 text-sm max-w-xl">All services are sourced directly from the
-                        production database. Prices are in XAF (Central African CFA Franc).</p>
-                </div>
-                <div class="flex flex-wrap gap-2 text-xs font-semibold no-print">
-                    <button onclick="filterTable('all')" id="tab-all"
-                        class="px-3 py-1.5 rounded-full bg-slate-800 text-white transition">All (34)</button>
-                    <button onclick="filterTable('academic')" id="tab-academic"
-                        class="px-3 py-1.5 rounded-full bg-white text-slate-600 border border-gray-200 hover:bg-gray-50 transition">Academic</button>
-                    <button onclick="filterTable('campus')" id="tab-campus"
-                        class="px-3 py-1.5 rounded-full bg-white text-slate-600 border border-gray-200 hover:bg-gray-50 transition">Campus</button>
-                    <button onclick="filterTable('platform')" id="tab-platform"
-                        class="px-3 py-1.5 rounded-full bg-white text-slate-600 border border-gray-200 hover:bg-gray-50 transition">Platform</button>
-                    <button onclick="filterTable('advanced')" id="tab-advanced"
-                        class="px-3 py-1.5 rounded-full bg-white text-slate-600 border border-gray-200 hover:bg-gray-50 transition">Digital
-                        Add-ons</button>
-                </div>
-            </div>
-
-            <!-- Services Table -->
-            <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
-                <div class="overflow-x-auto">
-                    <table class="w-full text-sm border-collapse">
-                        <thead>
-                            <tr class="bg-slate-800 text-white">
-                                <th
-                                    class="px-5 py-4 text-left font-semibold text-xs uppercase tracking-wider text-gray-300 w-10">
-                                    #</th>
-                                <th
-                                    class="px-5 py-4 text-left font-semibold text-xs uppercase tracking-wider text-gray-300">
-                                    Service Type</th>
-                                <th
-                                    class="px-5 py-4 text-left font-semibold text-xs uppercase tracking-wider text-gray-300">
-                                    Service Description</th>
-                                <th
-                                    class="px-5 py-4 text-left font-semibold text-xs uppercase tracking-wider text-gray-300">
-                                    What Customer Receives</th>
-                                <th
-                                    class="px-5 py-4 text-right font-semibold text-xs uppercase tracking-wider text-gray-300">
-                                    Price (XAF)</th>
-                                <th
-                                    class="px-5 py-4 text-center font-semibold text-xs uppercase tracking-wider text-gray-300">
-                                    Settlement</th>
-                            </tr>
-                        </thead>
-                        <tbody id="services-table-body" class="divide-y divide-gray-100 text-slate-700">
-                            <!-- Rows populated by JS -->
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-
-            <!-- Legend -->
-            <div class="flex flex-wrap gap-4 mt-5 text-xs text-gray-500">
-                <div class="flex items-center gap-1.5"><span
-                        class="w-3 h-3 rounded-full bg-blue-200 inline-block"></span> School Merchant — settlement goes
-                    to school account</div>
-                <div class="flex items-center gap-1.5"><span
-                        class="w-3 h-3 rounded-full bg-teal-200 inline-block"></span> MBO Merchant — settlement goes to
-                    MBO Inc. account</div>
-                <div class="flex items-center gap-1.5"><span
-                        class="w-3 h-3 rounded-full bg-amber-200 inline-block"></span> Split 50/50 — split between
-                    school and MBO accounts</div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ============================================================
-         SECTION 4: BUSINESS MODEL & BILLING ARCHITECTURE
-    ============================================================ -->
-    <section id="model" class="bg-white py-16 border-t border-gray-100">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12">
-                <span class="text-xs uppercase text-teal-600 font-bold tracking-widest">Business Model</span>
-                <h2 class="text-2xl md:text-3xl font-extrabold text-slate-900 mt-2">How Our Payment Architecture Works
-                </h2>
-                <p class="text-gray-500 mt-3 text-sm max-w-xl mx-auto">Designed for transparency and automated split
-                    settlement — no manual fund routing required.</p>
-            </div>
-
-            <div class="grid md:grid-cols-2 gap-8 mb-12">
-                <!-- Flow Diagram -->
-                <div class="bg-slate-50 rounded-2xl p-8 border border-slate-100">
-                    <h3 class="text-base font-bold text-slate-800 mb-6">Payment Flow</h3>
-                    <div class="space-y-4">
-                        <div class="flex items-start gap-4">
-                            <div
-                                class="w-8 h-8 bg-teal-600 text-white rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0">
-                                1</div>
-                            <div>
-                                <div class="font-semibold text-slate-800">Student / Parent initiates payment</div>
-                                <div class="text-sm text-gray-500 mt-0.5">Selects a service on the iwedu student portal.
-                                    Their matricule and billing identity are pre-verified in the school database.</div>
-                            </div>
-                        </div>
-                        <div class="w-0.5 h-6 bg-gray-200 ml-4"></div>
-                        <div class="flex items-start gap-4">
-                            <div
-                                class="w-8 h-8 bg-teal-600 text-white rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0">
-                                2</div>
-                            <div>
-                                <div class="font-semibold text-slate-800">gateway provider processes the transaction
-                                </div>
-                                <div class="text-sm text-gray-500 mt-0.5">Customer selects Mobile Money (MTN MoMo,
-                                    Orange Money and More) or Card (Visa, Mastercard). gateway provider securely
-                                    encrypts and
-                                    processes
-                                    the payment.</div>
-                            </div>
-                        </div>
-                        <div class="w-0.5 h-6 bg-gray-200 ml-4"></div>
-                        <div class="flex items-start gap-4">
-                            <div
-                                class="w-8 h-8 bg-teal-600 text-white rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0">
-                                3</div>
-                            <div>
-                                <div class="font-semibold text-slate-800">iwedu receives webhook confirmation</div>
-                                <div class="text-sm text-gray-500 mt-0.5">On successful payment, gateway provider sends
-                                    a webhook
-                                    to our server. The database marks the invoice as Paid and records the gateway
-                                    reference ID.</div>
-                            </div>
-                        </div>
-                        <div class="w-0.5 h-6 bg-gray-200 ml-4"></div>
-                        <div class="flex items-start gap-4">
-                            <div
-                                class="w-8 h-8 bg-teal-600 text-white rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0">
-                                4</div>
-                            <div>
-                                <div class="font-semibold text-slate-800">Automated digital receipt delivered</div>
-                                <div class="text-sm text-gray-500 mt-0.5">An email and/or SMS receipt is sent to the
-                                    user. The portal unlocks the paid service — a downloadable PDF, a grade
-                                    dashboard, or a hostel room allocation.</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Settlement Architecture -->
-                <div class="bg-slate-50 rounded-2xl p-8 border border-slate-100">
-                    <h3 class="text-base font-bold text-slate-800 mb-6">Fund Settlement Architecture</h3>
-                    <div class="space-y-5">
-                        <div class="bg-blue-50 border border-blue-100 rounded-xl p-4">
-                            <div class="flex items-center gap-2 mb-2">
-                                <div class="w-3 h-3 rounded-full bg-blue-500"></div>
-                                <span class="font-bold text-blue-800 text-sm">School Merchant Account (100%)</span>
-                            </div>
-                            <p class="text-xs text-blue-700 leading-relaxed">School Fees (Tuition), Registration Fees,
-                                Annual Medical Fees, Hostel Accommodation, Library Fines, and Application Fast-Track
-                                fees are settled <strong>100%</strong> into the partner institution's merchant account.
-                                MBO Inc. receives zero from these categories.</p>
-                        </div>
-                        <div class="bg-teal-50 border border-teal-100 rounded-xl p-4">
-                            <div class="flex items-center gap-2 mb-2">
-                                <div class="w-3 h-3 rounded-full bg-teal-500"></div>
-                                <span class="font-bold text-teal-800 text-sm">MBO Inc. Platform Account (100%)</span>
-                            </div>
-                            <p class="text-xs text-teal-700 leading-relaxed">Platform Maintenance Charges, Result
-                                Processing Fees, Admission Letter downloads, Attestation Reprints, AI Diagnostics,
-                                Blockchain Certificates, Analytics, Video Conferencing access, and Campus Pay wallet
-                                operations are settled <strong>100%</strong> into MBO Inc.'s account as technical
-                                service fees.</p>
-                        </div>
-                        <div class="bg-amber-50 border border-amber-100 rounded-xl p-4">
-                            <div class="flex items-center gap-2 mb-2">
-                                <div class="w-3 h-3 rounded-full bg-amber-500"></div>
-                                <span class="font-bold text-amber-800 text-sm">Shared Split (50% / 50%)</span>
-                            </div>
-                            <p class="text-xs text-amber-700 leading-relaxed">Official Transcript fees are split
-                                equally: <strong>50%</strong> to the school (printing costs, registrar management) and
-                                <strong>50%</strong> to MBO Inc. (digital validation, e-signature network).
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Accepted Payment Methods -->
-            <!-- <div class="bg-slate-900 rounded-2xl p-8 text-white">
-                <h3 class="text-base font-bold mb-6 text-center">Requested Payment Methods for Integration</h3>
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                    <div class="bg-white/10 rounded-xl p-4 text-center border border-white/10">
-                        <i class="fab fa-cc-visa text-4xl text-blue-300 mb-2 block"></i>
-                        <div class="text-sm font-bold">Visa</div>
-                        <div class="text-xs text-gray-400">Debit / Credit Card</div>
-                    </div>
-                    <div class="bg-white/10 rounded-xl p-4 text-center border border-white/10">
-                        <i class="fab fa-cc-mastercard text-4xl text-red-300 mb-2 block"></i>
-                        <div class="text-sm font-bold">Mastercard</div>
-                        <div class="text-xs text-gray-400">Debit / Credit Card</div>
-                    </div>
-                    <div class="bg-amber-500/10 rounded-xl p-4 text-center border border-amber-500/20">
-                        <i class="fas fa-mobile-alt text-3xl text-amber-300 mb-2 block"></i>
-                        <div class="text-sm font-bold">MTN MoMo</div>
-                        <div class="text-xs text-gray-400">Mobile Money</div>
-                    </div>
-                    <div class="bg-orange-500/10 rounded-xl p-4 text-center border border-orange-500/20">
-                        <i class="fas fa-mobile-alt text-3xl text-orange-300 mb-2 block"></i>
-                        <div class="text-sm font-bold">Orange Money</div>
-                        <div class="text-xs text-gray-400">Mobile Money</div>
-                    </div>
-                </div>
-            </div> -->
-        </div>
-    </section>
-
-    <!-- ============================================================
-         SECTION 5: LEGAL COMPLIANCE CENTER
-    ============================================================ -->
-    <section id="compliance" class="py-16 bg-gray-50 border-t border-gray-100">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12">
-                <span class="text-xs uppercase text-teal-600 font-bold tracking-widest">Legal & Compliance</span>
-                <h2 class="text-2xl md:text-3xl font-extrabold text-slate-900 mt-2">Merchant Legal Policies</h2>
-                <p class="text-gray-500 mt-3 text-sm max-w-xl mx-auto">Required compliance documentation for payment
-                    gateway onboarding review.</p>
-            </div>
-
-            <div class="max-w-4xl mx-auto space-y-4">
-                <!-- Terms of Service -->
-                <div class="bg-white border border-gray-200 rounded-xl overflow-hidden shadow-sm">
-                    <button onclick="toggleAccordion('acc-terms')"
-                        class="w-full px-6 py-5 text-left flex justify-between items-center hover:bg-gray-50 transition">
-                        <div class="flex items-center gap-3">
-                            <div
-                                class="w-8 h-8 bg-slate-100 rounded-lg flex items-center justify-center text-slate-600">
-                                <i class="fas fa-file-contract text-sm"></i>
-                            </div>
-                            <span class="font-bold text-slate-800">Terms and Conditions of Service</span>
-                        </div>
-                        <i id="icon-acc-terms"
-                            class="fas fa-chevron-down text-gray-400 transition-transform duration-200"></i>
-                    </button>
-                    <div id="acc-terms" class="hidden border-t border-gray-100">
-                        <div class="px-6 py-5 text-sm text-gray-600 leading-relaxed space-y-4">
-                            <p><strong class="text-slate-800">1. Parties & Scope:</strong> These Terms govern all
-                                payment transactions initiated through the MBO Inc. iwedu portal by students, parents,
-                                or authorized guardians. By completing a payment, you agree to be bound by these terms.
-                            </p>
-                            <p><strong class="text-slate-800">2. Student Verification:</strong> Each transaction must be
-                                linked to a valid student matricule number registered in our database. MBO Inc. is not
-                                liable for payments made against incorrect or unverified matricule entries by the payer.
-                            </p>
-                            <p><strong class="text-slate-800">3. Payment Processing:</strong> All monetary transactions
-                                are processed by our licensed payment gateway partner. We do not store raw card data,
-                                PINs, or CVV numbers on our servers. Tokenization is applied to all card-based
-                                transactions.</p>
-                            <p><strong class="text-slate-800">4. Settlement Routing:</strong> Fund routing follows our
-                                documented split-settlement schema. Academic fees (tuition, housing, registrations) are
-                                routed to partner school accounts. Technical platform fees (digital services, AI
-                                add-ons) are routed to MBO Inc. This model is enforced at the database level per service
-                                ID.</p>
-                            <p><strong class="text-slate-800">5. Governing Law:</strong> These Terms are governed by the
-                                laws of the Republic of Cameroon and CEMAC financial regulations. Disputes are subject
-                                to the jurisdiction of the courts of Kumba, Southwest Region.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Privacy Policy -->
-                <div class="bg-white border border-gray-200 rounded-xl overflow-hidden shadow-sm">
-                    <button onclick="toggleAccordion('acc-privacy')"
-                        class="w-full px-6 py-5 text-left flex justify-between items-center hover:bg-gray-50 transition">
-                        <div class="flex items-center gap-3">
-                            <div class="w-8 h-8 bg-blue-50 rounded-lg flex items-center justify-center text-blue-600"><i
-                                    class="fas fa-user-shield text-sm"></i></div>
-                            <span class="font-bold text-slate-800">Privacy Policy & Data Custodianship</span>
-                        </div>
-                        <i id="icon-acc-privacy"
-                            class="fas fa-chevron-down text-gray-400 transition-transform duration-200"></i>
-                    </button>
-                    <div id="acc-privacy" class="hidden border-t border-gray-100">
-                        <div class="px-6 py-5 text-sm text-gray-600 leading-relaxed space-y-4">
-                            <p><strong class="text-slate-800">Data Controller:</strong> Mboulaye Business Organizations
-                                (MBO Inc.), Kumba, Southwest Region, Cameroon. Email: privacy@mymbo.org</p>
-                            <p><strong class="text-slate-800">Data Collected:</strong> For payment processing we
-                                collect: full name, student matricule, billing email address, and mobile phone number.
-                                Card details are never stored on our servers — they are tokenized and handled
-                                exclusively by our payment processor.</p>
-                            <p><strong class="text-slate-800">Data Sharing:</strong> Transaction data is transmitted to
-                                our payment gateway solely for authorization and settlement clearing. We do not sell,
-                                rent, or share personal data with third parties for commercial purposes.</p>
-                            <p><strong class="text-slate-800">Customer Rights:</strong> Customers may request access to
-                                their transaction history, correction of billing errors, or account deletion by
-                                contacting privacy@mymbo.org. Requests are processed within 7 business days.</p>
-                            <p><strong class="text-slate-800">Data Retention:</strong> Financial transaction records are
-                                retained for 7 years in compliance with Cameroonian accounting regulations. Inactive
-                                student portal accounts are archived after 3 academic years.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Refund Policy -->
-                <div class="bg-white border border-gray-200 rounded-xl overflow-hidden shadow-sm">
-                    <button onclick="toggleAccordion('acc-refund')"
-                        class="w-full px-6 py-5 text-left flex justify-between items-center hover:bg-gray-50 transition">
-                        <div class="flex items-center gap-3">
-                            <div class="w-8 h-8 bg-green-50 rounded-lg flex items-center justify-center text-green-600">
-                                <i class="fas fa-undo-alt text-sm"></i>
-                            </div>
-                            <span class="font-bold text-slate-800">Refund, Return, and Cancellation Policy</span>
-                        </div>
-                        <i id="icon-acc-refund"
-                            class="fas fa-chevron-down text-gray-400 transition-transform duration-200"></i>
-                    </button>
-                    <div id="acc-refund" class="hidden border-t border-gray-100">
-                        <div class="px-6 py-5 text-sm text-gray-600 leading-relaxed space-y-4">
-                            <p><strong class="text-slate-800">Academic Fees (Tuition, Hostel, Registration):</strong>
-                                These are settled to the partner school institution. Refund eligibility is governed by
-                                the respective institution's internal policy and academic calendar. Refund requests must
-                                be submitted in writing to the school bursar's office. MBO Inc. will facilitate the
-                                reversal process once the school approves the refund.</p>
-                            <p><strong class="text-slate-800">Digital Services & Platform Charges:</strong> Charges for
-                                digital access tokens (admission letters, attestation reprints, AI analytics credits,
-                                video conferencing sessions, blockchain certificates) are non-refundable once the
-                                digital asset or access token has been generated and delivered to the student's account.
-                            </p>
-                            <p><strong class="text-slate-800">Double Billing / Gateway Errors:</strong> If a duplicate
-                                charge occurs due to network failure or gateway error, the customer must report it
-                                within 14 days with the transaction reference to support@mymbo.org. Verified duplicate
-                                transactions will be refunded in full to the original payment method within 3–5 business
-                                days.</p>
-                            <p><strong class="text-slate-800">Chargeback Policy:</strong> Customers are encouraged to
-                                contact our support desk before initiating a chargeback with their card provider or
-                                telecom. We aim to resolve all billing disputes within 48 hours. Fraudulent chargeback
-                                claims will be contested with full transaction evidence.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Contact Policy -->
-                <div class="bg-white border border-gray-200 rounded-xl overflow-hidden shadow-sm">
-                    <button onclick="toggleAccordion('acc-contact')"
-                        class="w-full px-6 py-5 text-left flex justify-between items-center hover:bg-gray-50 transition">
-                        <div class="flex items-center gap-3">
-                            <div
-                                class="w-8 h-8 bg-indigo-50 rounded-lg flex items-center justify-center text-indigo-600">
-                                <i class="fas fa-headset text-sm"></i>
-                            </div>
-                            <span class="font-bold text-slate-800">Customer Support & Dispute Resolution</span>
-                        </div>
-                        <i id="icon-acc-contact"
-                            class="fas fa-chevron-down text-gray-400 transition-transform duration-200"></i>
-                    </button>
-                    <div id="acc-contact" class="hidden border-t border-gray-100">
-                        <div class="px-6 py-5 text-sm text-gray-600 leading-relaxed space-y-3">
-                            <div class="grid md:grid-cols-2 gap-4">
-                                <div class="flex gap-3"><i
-                                        class="fas fa-envelope text-teal-500 mt-0.5 flex-shrink-0"></i>
-                                    <div>
-                                        <div class="font-semibold text-slate-700">General Inquiries</div><a
-                                            href="mailto:info@mymbo.org"
-                                            class="text-teal-600 hover:underline">info@mymbo.org</a>
-                                    </div>
-                                </div>
-                                <div class="flex gap-3"><i
-                                        class="fas fa-headset text-teal-500 mt-0.5 flex-shrink-0"></i>
-                                    <div>
-                                        <div class="font-semibold text-slate-700">Payment Support</div><a
-                                            href="mailto:support@mymbo.org"
-                                            class="text-teal-600 hover:underline">support@mymbo.org</a>
-                                    </div>
-                                </div>
-                                <div class="flex gap-3"><i class="fas fa-lock text-teal-500 mt-0.5 flex-shrink-0"></i>
-                                    <div>
-                                        <div class="font-semibold text-slate-700">Privacy / Data Requests</div><a
-                                            href="mailto:privacy@mymbo.org"
-                                            class="text-teal-600 hover:underline">privacy@mymbo.org</a>
-                                    </div>
-                                </div>
-                                <div class="flex gap-3"><i class="fas fa-gavel text-teal-500 mt-0.5 flex-shrink-0"></i>
-                                    <div>
-                                        <div class="font-semibold text-slate-700">Compliance & Disputes</div><a
-                                            href="mailto:compliance@mymbo.org"
-                                            class="text-teal-600 hover:underline">compliance@mymbo.org</a>
-                                    </div>
-                                </div>
-                                <div class="flex gap-3"><i class="fas fa-phone text-teal-500 mt-0.5 flex-shrink-0"></i>
-                                    <div>
-                                        <div class="font-semibold text-slate-700">Phone Support</div><a
-                                            href="tel:+237679897892" class="text-slate-700 hover:text-teal-600">+237 679
-                                            897 892</a>
-                                    </div>
-                                </div>
-                                <div class="flex gap-3"><i class="fas fa-clock text-teal-500 mt-0.5 flex-shrink-0"></i>
-                                    <div>
-                                        <div class="font-semibold text-slate-700">Support Hours</div><span>Mon–Fri, 8:00
-                                            AM – 5:00 PM (GMT+1)</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ============================================================
-         SECTION 6: CONTACT & CTA FOR GATEWAY REVIEWER
-    ============================================================ -->
-    <section id="contact" class="bg-slate-900 text-white py-16 border-t border-slate-800">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 class="text-2xl md:text-3xl font-extrabold mb-4">Ready to Approve Our Integration?</h2>
-            <p class="text-gray-400 max-w-xl mx-auto mb-10 text-sm leading-relaxed">We appreciate the time taken to
-                review this merchant application. If you have any further questions about our business model, banking
-                details, or technical integration requirements, please reach out directly.</p>
-            <div class="flex flex-col md:flex-row justify-center gap-5 text-sm">
-                <a href="mailto:info@mymbo.org?subject=gateway provider Gateway Integration Review"
-                    class="inline-flex items-center justify-center gap-3 bg-teal-600 hover:bg-teal-700 text-white px-8 py-3.5 rounded-lg font-bold transition shadow-lg shadow-teal-900/30">
-                    <i class="fas fa-envelope"></i> Email Our Compliance Desk
-                </a>
-                <a href="tel:+237679897892"
-                    class="inline-flex items-center justify-center gap-3 border border-white/20 hover:border-teal-400 hover:text-teal-400 text-white px-8 py-3.5 rounded-lg font-bold transition">
-                    <i class="fas fa-phone"></i> +237 679 897 892
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-slate-950 py-6 text-center text-xs text-gray-600 border-t border-slate-900">
-        <div class="max-w-7xl mx-auto px-4">
-            <p>&copy; 2026 Mboulaye Business Organizations (MBO Inc.) — Merchant Gateway Application Portal. All Rights
-                Reserved.</p>
-        </div>
+        <p class="text-gray-500 text-sm px-4 leading-loose">
+            &copy; 2026 Mboulaye Business Organizations (MBO Inc.). All Rights Reserved.
+        </p>
     </footer>
 
-    <!-- ============================================================
-         JAVASCRIPT — Table Rendering & Accordion Logic
-    ============================================================ -->
-    <script>
-        const services = [
-            { id: 35, type: "Medicals", detail: "Annual Medical Fee", price: 5000, owner: "SCHOOL", split_school: 100, split_mbo: 0, category: "campus", description: "Annual clinic enrollment, emergency medical supplies, and on-campus health monitoring. Logged via the iwedu Nurse Portal." },
-            { id: 36, type: "Platform Charges", detail: "Annual Platform Maintenance Fee", price: 1000, owner: "MBO", split_school: 0, split_mbo: 100, category: "platform", description: "Student cloud database slot, SMS alert pathways, and annual security system maintenance." },
-            { id: 37, type: "Final Results", detail: "First Semester Result Processing", price: 500, owner: "MBO", split_school: 0, split_mbo: 100, category: "platform", description: "Compilation, digital validation, and distribution of first semester academic result sheets." },
-            { id: 38, type: "Final Results", detail: "Second Semester Result Processing", price: 500, owner: "MBO", split_school: 0, split_mbo: 100, category: "platform", description: "Compilation, digital validation, and distribution of second semester academic result sheets." },
-            { id: 39, type: "Final Results", detail: "Resit Semester Result Processing", price: 500, owner: "MBO", split_school: 0, split_mbo: 100, category: "platform", description: "Compilation, digital validation, and distribution of resit semester academic result sheets." },
-            { id: 40, type: "Transcript", detail: "Official Transcript Request", price: 3000, owner: "SCHOOL", split_school: 50, split_mbo: 50, category: "campus", description: "Official academic transcript document printed by registrar and digitally validated by MBO Inc. e-signature network. Fee split 50/50." },
-            { id: 43, type: "School Fees", detail: "First Tuition Installment", price: 250000, owner: "SCHOOL", split_school: 100, split_mbo: 0, category: "academic", description: "First installment of annual academic tuition. Disbursed 100% to the institution's bank account." },
-            { id: 44, type: "School Fees", detail: "Second Tuition Installment", price: 200000, owner: "SCHOOL", split_school: 100, split_mbo: 0, category: "academic", description: "Second installment of annual academic tuition. Disbursed 100% to the institution's bank account." },
-            { id: 45, type: "School Fees", detail: "Complete Tuition Payment", price: 450000, owner: "SCHOOL", split_school: 100, split_mbo: 0, category: "academic", description: "Full annual tuition paid in a single transaction. Disbursed 100% to the institution's bank account." },
-            { id: 46, type: "Registration Fees", detail: "HND/B.Tech./B.Sc./B.Eng. Registration", price: 10000, owner: "SCHOOL", split_school: 100, split_mbo: 0, category: "academic", description: "Administrative setup for undergraduate student folders, admissions verification, and matriculation records." },
-            { id: 47, type: "Registration Fees", detail: "HPD/M.Tech./M.Sc./M.Eng. Registration", price: 20000, owner: "SCHOOL", split_school: 100, split_mbo: 0, category: "academic", description: "Administrative setup for postgraduate student folders, admissions verification, and matriculation records." },
-            { id: 48, type: "Admission Letter", detail: "Admission Letter Download", price: 5000, owner: "MBO", split_school: 0, split_mbo: 100, category: "platform", description: "Digital signing, e-stamp, and secure delivery of the official institution admission letter via the student portal." },
-            { id: 49, type: "Platform Charges", detail: "Platform Operations (Undergraduate)", price: 1000, owner: "MBO", split_school: 0, split_mbo: 100, category: "platform", description: "Annual technical platform fee for undergraduate student data storage and portal dashboard access." },
-            { id: 50, type: "Platform Charges", detail: "Platform Operations (Postgraduate)", price: 1000, owner: "MBO", split_school: 0, split_mbo: 100, category: "platform", description: "Annual technical platform fee for postgraduate student data storage and portal dashboard access." },
-            { id: 51, type: "Admission Email", detail: "Admission Notification Alert", price: 500, owner: "MBO", split_school: 0, split_mbo: 100, category: "platform", description: "Email and SMS delivery fee for automated admission approval notifications sent to applicants." },
-            { id: 52, type: "Fast-Track Processing", detail: "Application Fast-Track Fee", price: 5000, owner: "SCHOOL", split_school: 100, split_mbo: 0, category: "platform", description: "Priority processing of application files by the Registrar's office, guaranteed review within 24 hours." },
-            { id: 53, type: "Acceptance Package", detail: "Digital Acceptance Package", price: 1000, owner: "MBO", split_school: 0, split_mbo: 100, category: "platform", description: "Welcome kit: campus maps, student handbook, registration checklist, and academic calendar — delivered as a digital PDF package." },
-            { id: 54, type: "AI Diagnostic", detail: "AI Program Matcher", price: 1500, owner: "MBO", split_school: 0, split_mbo: 100, category: "advanced", description: "AI-driven utility that cross-references student entry grades and recommends the most suitable degree programs." },
-            { id: 55, type: "Campus Pay", detail: "Campus Pay Wallet Top-Up", price: 2000, owner: "MBO", split_school: 0, split_mbo: 100, category: "platform", description: "Setup and loading of the iwedu Campus Pay digital wallet for cafeteria and on-campus vendor purchases." },
-            { id: 57, type: "Library Services", detail: "Library Late Return Fine", price: 1500, owner: "SCHOOL", split_school: 100, split_mbo: 0, category: "campus", description: "Fine applied for each library book returned beyond the authorized lending period." },
-            { id: 58, type: "Attestation Reprint", detail: "Certificate Attestation Reprint", price: 5000, owner: "MBO", split_school: 0, split_mbo: 100, category: "platform", description: "Reprocessing and digital re-authentication of an official graduation attestation or academic certificate." },
-            { id: 59, type: "Hostel Accommodation", detail: "Block A – Male Hostel Room 001 (Premium)", price: 80000, owner: "SCHOOL", split_school: 100, split_mbo: 0, category: "campus", description: "Premium single/shared male hostel room, Block A. Includes power, water, and campus security per term." },
-            { id: 60, type: "Hostel Accommodation", detail: "Block A – Male Hostel Room 002 (Standard)", price: 50000, owner: "SCHOOL", split_school: 100, split_mbo: 0, category: "campus", description: "Standard male hostel room, Block A. Includes power, water, and campus security per term." },
-            { id: 61, type: "Hostel Accommodation", detail: "Block A – Male Hostel Room 003 (Premium)", price: 80000, owner: "SCHOOL", split_school: 100, split_mbo: 0, category: "campus", description: "Premium male hostel room, Block A. Includes power, water, and campus security per term." },
-            { id: 62, type: "Hostel Accommodation", detail: "Block A – Male Hostel Room 004 (Standard)", price: 50000, owner: "SCHOOL", split_school: 100, split_mbo: 0, category: "campus", description: "Standard male hostel room, Block A. Includes power, water, and campus security per term." },
-            { id: 63, type: "Hostel Accommodation", detail: "Block B – Female Hostel Room 001 (Premium)", price: 80000, owner: "SCHOOL", split_school: 100, split_mbo: 0, category: "campus", description: "Premium female hostel room, Block B. Includes power, water, and campus security per term." },
-            { id: 64, type: "Hostel Accommodation", detail: "Block B – Female Hostel Room 002 (Standard)", price: 50000, owner: "SCHOOL", split_school: 100, split_mbo: 0, category: "campus", description: "Standard female hostel room, Block B. Includes power, water, and campus security per term." },
-            { id: 65, type: "Hostel Accommodation", detail: "Block B – Female Hostel Room 003 (Premium)", price: 80000, owner: "SCHOOL", split_school: 100, split_mbo: 0, category: "campus", description: "Premium female hostel room, Block B. Includes power, water, and campus security per term." },
-            { id: 66, type: "Hostel Accommodation", detail: "Block B – Female Hostel Room 004 (Standard)", price: 50000, owner: "SCHOOL", split_school: 100, split_mbo: 0, category: "campus", description: "Standard female hostel room, Block B. Includes power, water, and campus security per term." },
-            { id: 68, type: "Campus Pay", detail: "Campus Pay Wallet Renewal", price: 1000, owner: "MBO", split_school: 0, split_mbo: 100, category: "platform", description: "Annual renewal of the iwedu Campus Pay digital wallet security and processing credentials." },
-            { id: 69, type: "Automatic Quiz", detail: "AI Quiz Generation Token", price: 2000, owner: "MBO", split_school: 0, split_mbo: 100, category: "advanced", description: "One-time access credit allowing a lecturer to generate an AI-powered custom quiz or homework set from curriculum data." },
-            { id: 71, type: "Analytics", detail: "AI-Powered Student Analytics", price: 2000, owner: "MBO", split_school: 0, split_mbo: 100, category: "advanced", description: "Unlocks a premium analytics dashboard showing student performance trends, attendance patterns, and at-risk dropout alerts." },
-            { id: 72, type: "Reporting", detail: "Advanced BI Reporting Module", price: 3000, owner: "MBO", split_school: 0, split_mbo: 100, category: "advanced", description: "Enables advanced business intelligence reporting for institutional administrators — cash flow, attendance, and grade analytics." },
-            { id: 73, type: "Video Conferencing", detail: "LMS Live Video Conferencing", price: 2500, owner: "MBO", split_school: 0, split_mbo: 100, category: "advanced", description: "Access token for private Jitsi-powered LMS virtual classrooms — for hybrid lectures and remote student participation." },
-            { id: 74, type: "Blockchain Certificate", detail: "Blockchain Certificate Minting", price: 3000, owner: "MBO", split_school: 0, split_mbo: 100, category: "advanced", description: "Cryptographic minting of a tamper-proof blockchain digital degree or diploma — independently verifiable by employers." }
-        ];
-
-        let activeFilter = 'all';
-
-        function getSettlementBadge(service) {
-            if (service.split_school === 50) return `<span class="category-badge bg-amber-100 text-amber-700">50% School / 50% MBO</span>`;
-            if (service.owner === 'SCHOOL') return `<span class="category-badge bg-blue-100 text-blue-700">School (100%)</span>`;
-            return `<span class="category-badge bg-teal-100 text-teal-700">MBO Inc. (100%)</span>`;
-        }
-
-        function getRowBg(service) {
-            if (service.split_school === 50) return 'bg-amber-50/30';
-            if (service.owner === 'SCHOOL') return 'bg-blue-50/30';
-            return 'bg-teal-50/20';
-        }
-
-        function renderTable() {
-            const tbody = document.getElementById('services-table-body');
-            tbody.innerHTML = '';
-            const filtered = services.filter(s => activeFilter === 'all' || s.category === activeFilter);
-
-            filtered.forEach((s, i) => {
-                const tr = document.createElement('tr');
-                tr.className = `service-row transition ${getRowBg(s)}`;
-                tr.innerHTML = `
-                    <td class="px-5 py-4 text-xs text-gray-400 font-mono">${s.id}</td>
-                    <td class="px-5 py-4">
-                        <span class="text-xs font-bold text-slate-600">${s.type}</span>
-                    </td>
-                    <td class="px-5 py-4">
-                        <div class="font-semibold text-slate-800 text-sm">${s.detail}</div>
-                    </td>
-                    <td class="px-5 py-4 text-xs text-gray-500 max-w-xs leading-relaxed">${s.description}</td>
-                    <td class="px-5 py-4 text-right font-black text-slate-900 text-sm whitespace-nowrap">${s.price.toLocaleString()} XAF</td>
-                    <td class="px-5 py-4 text-center">${getSettlementBadge(s)}</td>
-                `;
-                tbody.appendChild(tr);
-            });
-        }
-
-        function filterTable(cat) {
-            activeFilter = cat;
-            const tabs = ['all', 'academic', 'campus', 'platform', 'advanced'];
-            tabs.forEach(t => {
-                const btn = document.getElementById('tab-' + t);
-                if (t === cat) {
-                    btn.className = 'px-3 py-1.5 rounded-full bg-slate-800 text-white transition text-xs font-semibold';
-                } else {
-                    btn.className = 'px-3 py-1.5 rounded-full bg-white text-slate-600 border border-gray-200 hover:bg-gray-50 transition text-xs font-semibold';
-                }
-            });
-            renderTable();
-        }
-
-        function toggleAccordion(id) {
-            const el = document.getElementById(id);
-            const icon = document.getElementById('icon-' + id);
-            el.classList.toggle('hidden');
-            icon.classList.toggle('rotate-180');
-        }
-
-        renderTable();
-    </script>
 </body>
-
 </html>
