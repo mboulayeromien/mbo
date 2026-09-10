@@ -1,0 +1,40 @@
+# Git files
+.git
+.gitignore
+
+# Dependencies and package managers
+node_modules/
+npm-debug.log
+yarn-error.log
+pnpm-lock.yaml
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+*.sublime-project
+*.sublime-workspace
+
+# Docker files (don't copy Docker files into container)
+Dockerfile
+docker-compose.yml
+.dockerignore
+
+# Build output and caches
+.cache/
+dist/
+build/
+.env.local
+.env.*.local
+
+# OS files
+*.log
+*.tmp
+__pycache__/
+
+# Documentation (optional)
+README.md
